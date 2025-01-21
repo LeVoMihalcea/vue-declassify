@@ -25,7 +25,7 @@ program
         newLineKind: NewLineKind.LineFeed,
         quoteKind: QuoteKind.Single,
         useTrailingCommas: false,
-        indentationText: IndentationText.TwoSpaces,
+        indentationText: IndentationText.FourSpaces,
       },
     })
 
