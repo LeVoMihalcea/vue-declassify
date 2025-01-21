@@ -30,7 +30,6 @@ function declassifyTypeScript(project: Project, code: string) {
   })
   
   imports.remove(source, 'vue-class-component', 'vue-property-decorator')
-  imports.ensure(source, 'vue', { default: 'Vue' })
   vue.classToObject(source)
   return source.getFullText()
 }

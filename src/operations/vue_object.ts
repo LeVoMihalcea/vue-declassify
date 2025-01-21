@@ -490,8 +490,8 @@ export function classToObject(source: ts.SourceFile) {
     },
     expression: writer => {
       writer
-        .writeLine('Vue.extend({')
-        .withIndentationLevel(1, () => {
+        .writeLine('{')
+        .withIndentationLevel(2, () => {
           writeName(writer, declaration)
           writeConfig(writer, decorator)
           callbacks.push(...writeProps(writer, props))
@@ -500,7 +500,7 @@ export function classToObject(source: ts.SourceFile) {
           writeWatches(writer, watches)
           writeMethods(writer, methods)
         })
-        .write('})')
+        .write('}')
     },
     isExportEquals: false,
   })
