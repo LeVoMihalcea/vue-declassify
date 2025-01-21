@@ -29,7 +29,10 @@ export default class Test extends Vue {
   @Prop({ default: 5 })
   count!: number
 
-  /**
+  @Prop()
+  someRouter!: Router
+
+    /**
    * Some messages to show the user.
    */
   internalMessages: string[] = []
