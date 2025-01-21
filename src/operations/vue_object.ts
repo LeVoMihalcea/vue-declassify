@@ -167,7 +167,7 @@ function writePropType(
     // Add PropType to the imports afterwards, since we just used it.
     callbacks.push(source => {
       imports.ensure(source, 'vue', {
-        named: ['PropType'],
+        named: ['type PropType'],
       })
     })
   }
