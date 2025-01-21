@@ -197,9 +197,9 @@ function writePropOptions(
     writer.write(options.required.getText())
 
   } else {
-
     // Lastly, if neither property is directly supplied, mark `required` false.
-    writer.write('required: false')
+    // writer.write('required: false')
+    return;
   }
 
   writer
